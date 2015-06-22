@@ -1,8 +1,8 @@
 import monkdata as m
 import dtree
 
-def main():
-    print(dtree.entropy(m.monk3))
+def main():    
+    pass 
 
 if __name__ == "__main__":
     main()

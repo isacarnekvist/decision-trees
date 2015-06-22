@@ -2,13 +2,34 @@
 \usepackage{fullpage}
 
 \begin{document}
-\begin{tabular}{| l | p{5cm} |}
-    \hline
-    Dataset & Entropy \\
-    \hline
-    \hline
-    MONK-1 & 2 \\
-    \hline
-\end{tabular}
+\begin{figure}
+	\centering
+	\begin{tabular}{| l | l |}
+		\hline
+		Dataset & Entropy \\
+		\hline
+		\hline
+		MONK-1 & 1.0000 \\
+		MONK-2 & 0.9571 \\
+		MONK-3 & 0.9998 \\
+		\hline
+	\end{tabular}
+    \caption{Entropy of entire datasets}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{tabular}{| l | l | l | l | l | l | l |}
+        \hline
+        Dataset & a1 & a2 & a3 & a4 & a5 & a6 \\
+        \hline
+        \hline
+        MONK-1 & 0.075272  & 0.005838  & 0.004707  & 0.026311  & \textbf{0.287030}  & 0.000757 \\
+        MONK-2 & 0.003756  & 0.002458  & 0.001056  & 0.015664  & \textbf{0.017277} & 0.006247 \\
+        MONK-3 & 0.007120  & \textbf{0.293736} & 0.000831  & 0.002891  & 0.255911  & 0.007077 \\
+        \hline
+    \end{tabular}
+    \caption{Information gain with most/best gains in bold}
+\end{figure}
 
 \end{document}
